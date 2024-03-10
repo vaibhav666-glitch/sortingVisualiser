@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#mergeSort {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border: 1px solid #2980b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.rotate-up {
+    animation: rotateUp 1s ease-in-out;
+}
+
+.rotate-down {
+    animation: rotateDown 1s ease-in-out;
+}
+
+@keyframes rotateUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-100px) rotate(0deg);
+    }
+    50%{
+        transform: translate(100px,-100px) rotate(0deg);
+    }
+    100% {
+        transform: translate(100px,0px) rotate(0deg);
+    }
+}
+
+@keyframes rotateDown {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(100px) rotate(0deg);
+    }
+    50%{
+        transform: translate(-100px,100px) rotate(0deg);
+    }
+    100% {
+        transform: translate(-100px,0px) rotate(0deg);
+    }
+}
